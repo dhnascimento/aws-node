@@ -3,9 +3,7 @@ require('dotenv').config();
 
 const ID = process.env.accessKeyId;
 const SECRET = process.env.secretAccessKey;
-const BUCKET_NAME = 'dhn3-node-bucket';
-
-console.log({ID, SECRET});
+const BUCKET_NAME = 'dhn-node-bucket';
 
 const s3 = new AWS.S3({
     accessKeyId: ID,
